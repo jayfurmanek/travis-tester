@@ -1,0 +1,10 @@
+matrix:
+  include:
+    - env: CONFIG=linux_ppc64le_python3.6 UPLOAD_PACKAGES=True DOCKER_IMAGE=condaforge/linux-anvil-ppc64le
+      os: linux
+      arch: ppc64le
+      language: generic
+
+  script:
+    - cd dowhy-feedstock
+    - ./ci_support/run_docker_build.sh
