@@ -46,6 +46,7 @@ fi
 
 echo "Try docker run"
 
+docker run hello-world
 docker run ${DOCKER_RUN_ARGS} \
                         -v "${RECIPE_ROOT}":/home/conda/recipe_root:ro,z \
                         -v "${FEEDSTOCK_ROOT}":/home/conda/feedstock_root:rw,z \
