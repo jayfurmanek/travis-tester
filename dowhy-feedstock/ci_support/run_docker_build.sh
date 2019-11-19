@@ -44,6 +44,8 @@ if [ -z "${DOCKER_IMAGE}" ]; then
   DOCKER_IMAGE="condaforge/linux-anvil-ppc64le"
 fi
 
+echo "Try docker run"
+
 docker run ${DOCKER_RUN_ARGS} \
                         -v "${RECIPE_ROOT}":/home/conda/recipe_root:ro,z \
                         -v "${FEEDSTOCK_ROOT}":/home/conda/feedstock_root:rw,z \
