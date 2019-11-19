@@ -5,7 +5,7 @@ matrix:
       arch: ppc64le
       language: generic
 
-  install: skip
-  script:
-    - cd dowhy-feedstock
-    - ./ci_support/run_docker_build.sh
+install: skip
+script:
+  - cd dowhy-feedstock
+  - ./ci_support/run_docker_build.sh
