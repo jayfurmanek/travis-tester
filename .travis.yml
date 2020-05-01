@@ -1,0 +1,11 @@
+matrix:
+  include:
+    - env: CONFIG=linux_ppc64le_python3.6 UPLOAD_PACKAGES=True DOCKER_IMAGE=condaforge/linux-anvil-ppc64le
+      os: linux
+      arch: s390x
+      language: generic
+
+install: skip
+script:
+  - cd my_scripts
+  - ./check-env.sh
